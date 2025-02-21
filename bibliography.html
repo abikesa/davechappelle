@@ -375,10 +375,34 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="certainty">
 <span id="id1"></span><h1>Certainty, <em>γ</em> 😃 ⭕️<a class="headerlink" href="#certainty" title="Permalink to this heading">#</a></h1>
-<p><em>Y’already know! The US is minding its own business, like in Gaza, Greenland, Panama, Ukraine, Canada .</em></p>
+<style>
+  /* Apply styles only to elements with the custom class */
+  .custom-details summary {
+    list-style: none;  /* Remove default dropdown triangle */
+    cursor: pointer;
+    font-weight: normal;
+  }
+  .custom-details summary::-webkit-details-marker {
+    display: none; /* Remove marker in WebKit (Chrome, Safari) */
+  }
+</style>
+<details class="custom-details">
+  <summary>+ Expand</summary>
+<p><i>Y'already know! The US is minding its own business, like in Gaza, Greenland, Panama, Ukraine, Canada .*</i> </p>  
 <div style="display: flex; justify-content: center;">
     <iframe width="80%" height="400px" src="https://www.youtube.com/embed/EosppBqAz7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+</details>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const details = document.querySelector(".custom-details");
+    const summary = details.querySelector("summary");
+
+    details.addEventListener("toggle", function() {
+      summary.textContent = details.open ? "- Collapse" : "+ Expand";
+    });
+  });
+</script>
 <div class="docutils container" id="id2">
 <dl class="citation">
 <dt class="label" id="id58"><span class="brackets">1</span></dt>
