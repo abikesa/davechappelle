@@ -412,8 +412,19 @@ document.write(`
   .custom-details summary {
     list-style: none;  /* Remove default dropdown triangle */
     cursor: pointer;
-    font-weight: normal;
+    font-weight: normal; /* Normal text weight */
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px dotted black; /* Dotted circle */
+    border-radius: 20px; /* Make it rounded */
+    text-align: center;
+    transition: color 0.3s ease-in-out; /* Smooth transition */
   }
+
+  .custom-details summary:hover {
+    color: lightgray; /* Change text color on hover */
+  }
+
   .custom-details summary::-webkit-details-marker {
     display: none; /* Remove marker in WebKit (Chrome, Safari) */
   }
@@ -437,6 +448,8 @@ document.write(`
     });
   });
 </script>
+<p></p>
+<p></p>
 <p>Warren Buffett’s confidence in offering a billion-dollar prize for a perfect March Madness bracket is not misplaced bravado—it is the product of his deep understanding of probability, human psychology, and the nature of competitive games. Within your classification of games, this challenge falls squarely in the realm of <strong>pure probability</strong>, but with a deceptive illusion of <strong>strategy</strong> and <strong>knowledge</strong>—which is precisely why Buffett can offer such a ludicrous sum with full confidence that he will never have to pay.</p>
 <p>The probability of correctly predicting every single outcome in the NCAA tournament is an absurdly low <strong>1 in 9.2 quintillion</strong>, assuming random guessing. Even with expert knowledge—factoring in rankings, team dynamics, and historical trends—optimistic estimates place the odds closer to <strong>1 in a few billion</strong>. These are still worse odds than winning the lottery multiple times in a row. Buffett, the ultimate investor, is not engaging in charity; he is making a bet on human overconfidence. The challenge appears winnable to those who mistake knowledge for certainty, but in reality, it is a probabilistic abyss so deep that even the best statistical models cannot reliably cross it.</p>
 <p>Now, Musk’s assertion that AI—particularly xAI’s Grok-3—could help crack this challenge is a provocation worth dissecting. If we map it to your <strong>five-layer neural network framework</strong>, the crux of the problem sits in how information is processed across time and adversarial domains.</p>
