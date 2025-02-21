@@ -407,6 +407,36 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="resilience">
 <span id="id1"></span><h1>Resilience 🗡️❤️💰<a class="headerlink" href="#resilience" title="Permalink to this heading">#</a></h1>
+<style>
+  /* Apply styles only to elements with the custom class */
+  .custom-details summary {
+    list-style: none;  /* Remove default dropdown triangle */
+    cursor: pointer;
+    font-weight: normal;
+  }
+  .custom-details summary::-webkit-details-marker {
+    display: none; /* Remove marker in WebKit (Chrome, Safari) */
+  }
+</style>
+<details class="custom-details">
+  <summary>+ Expand</summary>
+  <blockquote style="border-left: 4px solid #ccc; padding-left: 10px; color: #555;">
+     <p>Billionaire Elon Musk on Monday said his startup xAI's latest iteration of the Grok chatbot could help college basketball fans pick a perfect bracket once March Madness begins.</p>
+   <p>xAI rolled out its new chatbot Grok-3, which is powered by artificial intelligence (AI), on Monday night, and during its event the company's lead researcher, Jimmy Paul, noted, "We can also do something more fun. For example, how about make a prediction about March Madness?"</p>
+   <p>"This is kind of a fun one where Warren Buffett has a billion bet that if you exactly match the entire winning tree of March Madness, you can win a billion dollars from Warren Buffett," Musk said in reference to the NCAA Basketball tournament bracket.</p> 
+   <p>"It would be pretty cool if AI could help you win a billion dollars from Buffett. It seems like a pretty good investment," he added.</p>
+ </blockquote>
+</details>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const details = document.querySelector(".custom-details");
+    const summary = details.querySelector("summary");
+
+    details.addEventListener("toggle", function() {
+      summary.textContent = details.open ? "- Collapse" : "+ Expand";
+    });
+  });
+</script>
 <p>Warren Buffett’s confidence in offering a billion-dollar prize for a perfect March Madness bracket is not misplaced bravado—it is the product of his deep understanding of probability, human psychology, and the nature of competitive games. Within your classification of games, this challenge falls squarely in the realm of <strong>pure probability</strong>, but with a deceptive illusion of <strong>strategy</strong> and <strong>knowledge</strong>—which is precisely why Buffett can offer such a ludicrous sum with full confidence that he will never have to pay.</p>
 <p>The probability of correctly predicting every single outcome in the NCAA tournament is an absurdly low <strong>1 in 9.2 quintillion</strong>, assuming random guessing. Even with expert knowledge—factoring in rankings, team dynamics, and historical trends—optimistic estimates place the odds closer to <strong>1 in a few billion</strong>. These are still worse odds than winning the lottery multiple times in a row. Buffett, the ultimate investor, is not engaging in charity; he is making a bet on human overconfidence. The challenge appears winnable to those who mistake knowledge for certainty, but in reality, it is a probabilistic abyss so deep that even the best statistical models cannot reliably cross it.</p>
 <p>Now, Musk’s assertion that AI—particularly xAI’s Grok-3—could help crack this challenge is a provocation worth dissecting. If we map it to your <strong>five-layer neural network framework</strong>, the crux of the problem sits in how information is processed across time and adversarial domains.</p>
@@ -423,13 +453,6 @@ document.write(`
 </figcaption>
 </figure>
 <p>An AI-worthy challenge must satisfy three fundamental criteria: a <strong>massive combinatorial search space</strong>, an <strong>optimizing function</strong>, and a <strong>rich supply of real or synthetic data</strong>. The first criterion is evident in the NCAA bracket itself. With <strong>2^63 possible outcomes</strong> in a single-elimination tournament, the sheer number of permutations presents an intractable problem for brute-force solutions. Unlike chess or Go, where AI has conquered human grandmasters through tree-search optimizations and reinforcement learning, March Madness introduces <strong>a combinatorial explosion of randomness</strong> that defies traditional game-solving techniques. This places the challenge into the domain of probabilistic optimization rather than deterministic mastery. It is not a puzzle to be solved but a space to be <strong>navigated with probability weighting</strong>, which remains an active frontier for AI.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Billionaire Elon Musk on Monday said his startup xAI’s latest iteration of the Grok chatbot could help college basketball fans pick a perfect bracket once March Madness begins.</p>
-<p>xAI rolled out its new chatbot Grok-3, which is powered by artificial intelligence (AI), on Monday night, and during its event the company’s lead researcher, Jimmy Paul, noted, “We can also do something more fun. For example, how about make a prediction about March Madness?”</p>
-<p>“This is kind of a fun one where Warren Buffett has a billion bet that if you exactly match the entire winning tree of March Madness, you can win a billion dollars from Warren Buffett,” Musk said in reference to the NCAA Basketball tournament bracket.</p>
-<p>“It would be pretty cool if AI could help you win a billion dollars from Buffett. It seems like a pretty good investment,” he added.</p>
-</div>
 <p>The second criterion, an <strong>optimizing function</strong>, is conceptually present but hazier in its definition. Unlike deterministic games where the objective function is clear—checkmate in chess or maximizing reward in a game like Atari—bracket prediction operates on <strong>conditional probability cascades</strong>. The ultimate goal might be selecting the final two teams, or even the final champion, but <strong>each game in the tournament is its own micro-optimization problem</strong>, creating a deeply nested function. If the function were simply “maximize likelihood of picking the winner,” AI could apply robust Bayesian methods to simulate likely champions. But the problem extends beyond the final game—<strong>the correct bracket requires accuracy at every decision node</strong>, meaning <strong>failure anywhere in the chain collapses the entire prediction model</strong>. In a way, this makes bracket optimization even more adversarial than stock market predictions, as there is no portfolio diversification—<strong>only binary survival at every step</strong>.</p>
 <p>The third criterion, a <strong>rich supply of real or synthetic data</strong>, is the most ambiguous in this context. AI thrives when data is abundant, structured, and repeatable, allowing models to learn and refine themselves over time. Historical NCAA data provides a foundation—win/loss records, team rankings, player stats, injury reports, coach strategies—but the <strong>high variance in player turnover year to year</strong> makes NCAA modeling inherently more unstable than professional leagues. Unlike a game like poker, where AI can simulate billions of hands to learn strategy, college basketball has a <strong>relatively small dataset</strong>, and the conditions are <strong>non-stationary</strong>. This is where synthetic data might come into play—AI could generate millions of simulated March Madness tournaments based on probabilistic models, but the problem is that <strong>real-world chaos resists perfect modeling</strong>. Unlike protein folding, where DeepMind’s AlphaFold cracked the code by leveraging vast synthetic simulations alongside real-world data, March Madness has <strong>too many unknown unknowns</strong>: referee bias, hot streaks, psychological momentum, and game-time injuries that no model can fully predict.</p>
 <p>Thus, while the first two criteria—<strong>combinatorial complexity</strong> and <strong>an optimizing function</strong>—are clearly met, the third criterion remains the most problematic. The lack of abundant, structured, and stable data makes this challenge a probabilistic wall rather than a solvable AI frontier. Buffett understands this instinctively, while Musk sees the opportunity in <strong>framing AI as an oracle, even when it cannot control chaos</strong>. This is what makes the AI debate on March Madness compelling—not because the problem is unsolvable, but because it <strong>exposes the limits of AI’s predictive power in fundamentally uncertain environments</strong>.</p>
