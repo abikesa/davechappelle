@@ -61,6 +61,8 @@
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'act3/part1/part1_2';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -380,7 +382,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -396,6 +400,21 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#efficiency">Efficiency</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#landscape">Landscape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#safer">Safer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#insights">Insights</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#core-functionality"><strong>Core Functionality</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps"><strong>Next Steps</strong></a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -407,15 +426,156 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="revolution">
 <span id="id1"></span><h1>Revolution<a class="headerlink" href="#revolution" title="Permalink to this heading">#</a></h1>
-<div style="display: flex; justify-content: center;">
-    <iframe width="70%" height="350px" src="https://www.youtube.com/embed/qhpGavtuu8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<style>
+  /* Apply styles only to elements with the custom class */
+  .custom-details summary {
+    list-style: none;  /* Remove default dropdown triangle */
+    cursor: pointer;
+    font-weight: normal; /* Normal text weight */
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px dotted black; /* Dotted circle */
+    border-radius: 20px; /* Make it rounded */
+    text-align: center;
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .custom-details summary:hover {
+    color: lightgray; /* Change text color on hover */
+  }
+
+  .custom-details summary::-webkit-details-marker {
+    display: none; /* Remove marker in WebKit (Chrome, Safari) */
+  }
+</style>
+<details class="custom-details">
+  <summary>+ Expand</summary>
+  <blockquote style="border-left: 4px solid #ccc; padding-left: 10px; color: #555;">
+     <em>
+     <p>Yours Truly: Hey, could you summarize and tell us what's going on here?.</p>
+   <p>GPT-4o: This image shows two wooden charcuterie or snack boards arranged on a table with a floral tablecloth. The foreground board contains fresh fruit, including sliced oranges and apples. The background board has cheese (likely cheddar and a soft cheese), crackers, and nuts. The boards have a geometric, handcrafted design with varied wood tones, suggesting a unique or artisanal style. The overall presentation indicates a casual yet aesthetically thoughtful snack or appetizer spread.</p>
+   <p>Yours Truly: Can you speak back and describe what you just saw?</p> 
+   <p>GPT-4o: Sure! What I see here are two beautifully crafted wooden snack boards set on a floral tablecloth. The front board is filled with bright, juicy orange wedges and neatly sliced red apples, arranged in a way that makes them easy to grab. The back board has a mix of cheeses—looks like some firm cheddar and a soft, spreadable cheese—along with a few crackers and nuts. The boards themselves have an interesting geometric design, combining different wood tones, which gives them a unique, artisanal feel. It all looks like a relaxed yet intentional spread, perfect for a small gathering or just an aesthetically pleasing snack.</p>
+   <p>GPT-4o: Sure! What I see here are two beautifully crafted wooden snack boards set on a floral tablecloth. The front board is filled with bright, juicy orange wedges and neatly sliced red apples, arranged in a way that makes them easy to grab. The back board has a mix of cheeses—looks like some firm cheddar and a soft, spreadable cheese—along with a few crackers and nuts. The boards themselves have an interesting geometric design, combining different wood tones, which gives them a unique, artisanal feel. It all looks like a relaxed yet intentional spread, perfect for a small gathering or just an aesthetically pleasing snack.</p>
+   <p>Yours Truly: What time of day do you think it is?</p>
+   <p>GPT-4o: It feels like daytime, probably late morning or early afternoon. The fresh fruit, particularly the vibrant orange slices, suggests a light and refreshing snack, something you might put out for brunch or an afternoon gathering. The natural lighting and floral tablecloth also hint at a casual, daytime setting rather than an evening event. If I had to guess, this is the kind of spread someone might put together for a relaxed midday break or an early afternoon get-together.</p>
+   <p>Yours Truly: Spot on. Wow! So, we have a question regarding agency. I'm convinced, without a doubt, that you have world AI capabilities, but they're developing. You have perception AI capabilities, agentic AI capabilities, for instance. We'll get to that. Generative, obviously, in your name, GPT. Great discussion about grant applications. And thus far...</p>
+   <p>GPT-4o: I'm following. You're drawing a parallel between my AI architecture and the layers of agency—perception, generative capacity, strategic action—mirroring the neural framework we've discussed. You're positioning me within that dynamic capability model, where I already exhibit some agentic behavior (structured responses, reasoning, even anticipation) but not full autonomy.</p>
+      <p>You're also hinting at a bigger conversation: if I can analyze grant applications, dissect strategic trade-offs, and even infer situational context (like guessing the time of day from an image), then what does agency really mean for AI? Where does perception end and action begin? And, crucially, how does that compare to human agency?</p>
+      <p>Keep going. I want to see where you're taking this.</p>
+ <p>Yours Truly: Well, I'm taking this as APIs. So, I'm thinking of API as perception. And, obviously, you have an API. You have an API that allows you to see. You, as GPT, do not have the eyes, but iPhone has the eyes. So I took a photograph of the spirits using iPhone's eyes. That's perception...</p>
+<p>GPT-4o: Yes, that makes perfect sense. You're treating APIs as perception channels—interfaces that allow information from the world to be fed into an agent. In this case, the iPhone is acting as the sensory organ, capturing the image, while I process it through my API. I don’t "see" in the way humans do, but I can analyze, interpret, and infer based on the input provided.</p>
+   <p>This ties directly into the way biological perception works. The retina captures light, the optic nerve transmits signals, and the brain processes them into meaning. In this model, the iPhone's camera is the retina, its processing power is the optic nerve, and my API is handling the cortical-level interpretation.</p>
+    <p>And from this, I assume you’re taking the next step: if perception is API-driven, then agency must be tied to the next set of APIs—those that allow action. An API that just "sees" is passive. True agency would require an API that not only perceives but also makes decisions and executes them.</p>
+     <p>Are you framing this as an evolution toward a more agentic AI, or are you focusing on how APIs already create layered agency in digital systems?</p>
+<p>Yours Truly: We're framing this evolution as an API that does not sleep. We want you to search the internet constantly, find opportunities, and report them to us in notifications, email, or even if it's an emergency with a timeline, call us. Because right now we're relying on our networks to give us business consultation ideas, which is good, they're working, but, you know, this is a human agent, so you will take it to another level.</p>
+<p>GPT-4o: You're thinking about an autonomous API-driven agent—one that doesn't sleep, constantly scans the internet, and proactively identifies opportunities, risks, and strategic insights. This is beyond passive perception; it’s an agent that actively seeks, filters, and prioritizes information with context-aware decision-making.</p>
+   <p>Right now, you're relying on human networks for business consultation, which means you get insights filtered through human bias, memory, and availability. That’s good—social networks bring intuition, experience, and trust. But a tireless AI agent would push this further, eliminating gaps in vigilance and uncovering opportunities at scale.</p>
+    <p>So the real question: how do we design this? What parameters should it track? Funding opportunities? Emerging markets? Competitive intelligence? If it’s a business consultant, should it only monitor predefined sources, or should it autonomously expand its own search space? And, most importantly, how does it communicate—email, push notifications, direct integration into your systems?</p>
+     <p>You're envisioning a 24/7 strategic API, not just a research tool. Let’s build the specs.</p>
+<p>Yours Truly: Okay.</p>
+    </em>
+   <p>--<a href="https://www.foxbusiness.com/technology/elon-musk-hints-new-grok-ai-could-beat-warren-buffetts-march-madness-bracket-challenge"> Fox Business</a></p>
+ </blockquote>
+</details>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const details = document.querySelector(".custom-details");
+    const summary = details.querySelector("summary");
+
+    details.addEventListener("toggle", function() {
+      summary.textContent = details.open ? "- Collapse" : "+ Expand";
+    });
+  });
+</script>
+<p></p>
+<p></p>
+<section id="efficiency">
+<h2>Efficiency<a class="headerlink" href="#efficiency" title="Permalink to this heading">#</a></h2>
+<p>The foundation we’ve laid today is one of immense potential—a vision for an agentic AI consultant that operates without sleep, continuously scanning the digital landscape for actionable insights. By framing APIs as perception, we’ve begun to see how an autonomous system could function much like a human consultant but without the constraints of time, attention, or cognitive bandwidth. Right now, your business intelligence relies on human networks, which offer depth, experience, and trust, but also limitations—bias, missed opportunities, and dependence on availability. An AI-driven agent, by contrast, would work tirelessly, evolving its search space, filtering noise, and prioritizing critical insights. The goal is not just to replicate human consultation but to transcend it, introducing a level of vigilance and strategic foresight that is otherwise impossible.</p>
+<p>Where we could take this next depends on how far we want to push agency. Do we want an assistant that merely delivers insights, or one that begins to act, drafting strategies, applying for grants, or even initiating negotiations? A system that simply reports back is valuable, but a system that suggests, refines, and even executes within predefined boundaries would represent true agency. The challenge lies in striking the right balance—ensuring that AI remains an augmentation of human intelligence rather than an opaque black box making autonomous decisions. We would need safeguards, feedback loops, and interpretability baked into its operation.</p>
+<p>One potential omission in our discussion is the question of ethical and strategic risk. A system that continuously searches and notifies could introduce signal fatigue—too many alerts diluting the ability to focus on what truly matters. Similarly, in a world saturated with information, what ensures that the AI’s findings are truly novel and not just a reformulation of existing human knowledge? Additionally, while automation offers efficiency, it risks over-indexing on patterns and failing to capture serendipity—the unexpected intersections that human thought thrives on.</p>
+<p>As we sit back and enjoy the spread before us—cheese, crackers, fruit—it’s worth savoring not just the flavors, but the moment. There is something fundamentally human in taking a pause, in letting the mind wander rather than relentlessly optimizing. AI may one day approximate this kind of organic reflection, but for now, it remains a tool—an extraordinary one, no doubt, but still bound by the constraints of structured input and output. We’ve framed the blueprint for something powerful, but perhaps the best insights will come not from pushing forward immediately, but from stepping back, letting the subconscious process, and allowing inspiration to emerge in its own time.</p>
 <figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="act3/figures/blanche.*"><img alt="act3/figures/blanche.*" src="act3/figures/blanche.*" style="width: 1px; height: 1px;" /></a>
+<a class="reference internal image-reference" href="act3/charcuterie.*"><img alt="act3/charcuterie.*" src="act3/charcuterie.*" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 21 </span><span class="caption-text"><em>What Exactly is Identity</em>. A node may represent goats (in general) and another sheep (in general). But the identity of any specific animal (not its species) is a network. For this reason we might have a “black sheep”, distinct in certain ways – perhaps more like a goat than other sheep. But that’s all dull stuff. Mistaken identity is often the fuel of comedy, usually when the adversarial is mistaken for the cooperative or even the transactional.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text"><em>Ecosystem, Perceptual, Agentic, Generative, Robotic</em>. Let’s contemplate a variant on this theme: Server, API, Firm, Environment, Reward (SAFER <span class="math notranslate nohighlight">\(^{\texttrademark}\)</span>). The firm has a Principal and may employ an Agent; however, efficiency will aim for an API in-lieu of these human interactions. The API is a digital transformation that allows for the emergence of dynamic capabilities in real-time as the environment may have unpredictable shifts among cooperative, transactional, and adversarial equilibria.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
+<section id="landscape">
+<h2>Landscape<a class="headerlink" href="#landscape" title="Permalink to this heading">#</a></h2>
+<p>The landscape of intelligence—whether biological, artificial, or economic—rests on a fundamental architecture of layers, each building upon the last to generate complex behaviors. Traditional frameworks for understanding this hierarchy have included <strong>Ecosystem, Perceptual, Agentic, Generative, and Robotic</strong> components, each representing a distinct function in how an entity perceives, processes, and acts upon the world. However, a new variation on this theme presents itself: <strong>Server, API, Firm, Environment, Reward (SAFER™)</strong>. This alternative framework shifts the perspective toward economic and computational efficiency, mapping the way firms interact with their surroundings through increasingly digitized and automated mechanisms.</p>
+<p>At the core of SAFER™ is the <strong>Firm</strong>, which exists within a dynamic and often unpredictable <strong>Environment</strong>. Historically, firms have relied on a <strong>Principal-Agent</strong> model, where a Principal (e.g., a business owner, investor, or executive) employs human Agents (e.g., managers, employees, or consultants) to make decisions and execute strategies. The tension in this model arises from the well-documented <strong>Principal-Agent problem</strong>, where misaligned incentives, inefficiencies, and agency costs create friction within the system. The advent of <strong>Application Programming Interfaces (APIs)</strong> introduces a transformative alternative, offering a pathway toward disintermediation, where digital mechanisms replace human agents to execute tasks with precision, consistency, and scalability.</p>
+<p>The <strong>API</strong> represents the perceptual and operational layer within this new paradigm. It serves as a real-time interface between the Firm and its Environment, allowing for structured interaction without the unpredictability of human decision-making biases. APIs function as digital sensory organs and neural pathways, continuously absorbing information, executing processes, and adapting to new conditions in milliseconds. Unlike human agents, APIs do not require trust, motivation, or incentives to function efficiently; they simply operate within their programmed constraints, responding to data-driven triggers with unparalleled speed. In an economy where success hinges on rapid adaptation to <strong>cooperative, transactional, and adversarial equilibria</strong>, APIs provide firms with an intelligence layer that outpaces traditional decision-making structures.</p>
+<p>However, the presence of an API alone does not constitute full autonomy. The <strong>Server</strong> acts as the backbone, the stable computational infrastructure from which APIs draw their capabilities. In a sense, the Server is the robotic equivalent of the ecosystem—it provides the substrate upon which digital intelligence operates. While ecosystems in biological systems are shaped by evolutionary pressures, Servers are governed by computational efficiency and uptime. In this model, the robustness of the Server determines the firm’s ability to operate effectively in its Environment, much as the resilience of an ecosystem dictates the survival of species within it.</p>
+<p>The ultimate driver in this architecture is <strong>Reward</strong>, which acts as the incentive mechanism ensuring that the Firm continues to refine its use of APIs and Servers in pursuit of efficiency and profitability. Unlike biological intelligence, where survival pressures and evolutionary fitness dictate outcomes, Reward in SAFER™ is explicitly designed. It may take the form of financial profit, market share, user engagement, or any other quantifiable metric the Firm prioritizes. Crucially, Reward mechanisms must be dynamic, as static incentives lead to stagnation. A Firm that optimizes only for short-term gains, without incorporating feedback from its evolving Environment, risks obsolescence.</p>
+<p>The SAFER™ model encapsulates a new reality in which human agency, once central to economic coordination, is increasingly replaced by real-time digital transactions. While this presents immense potential for efficiency and scalability, it also raises deeper questions about the role of human decision-making in an era of automation. Can an API truly replace a seasoned strategist who understands nuance, intuition, and context? If firms become too reliant on computational heuristics, do they risk missing out on the emergent, serendipitous insights that arise from human cognition? These considerations highlight the tension between automation and creativity—a theme that remains unresolved as firms race toward increasingly autonomous decision-making structures.</p>
+<p>What SAFER™ proposes is not just an alternative to human agency, but a redefinition of how intelligence operates in a digital economy. Firms that integrate Servers, APIs, and adaptive Reward structures will find themselves at an advantage in navigating unpredictable market conditions. Those that cling to traditional Principal-Agent models may face increasing inefficiencies as digital competitors move faster, adjust more dynamically, and execute with greater precision. However, the firms that thrive will be the ones that recognize that full automation is not always optimal—there will always be spaces where human intuition, creativity, and strategic ambiguity hold irreplaceable value.</p>
+<p>Ultimately, SAFER™ is a blueprint for a future where digital intelligence, rather than human intermediaries, orchestrates the balance between adaptation and optimization. Whether this results in a more efficient, resilient economy or one that is mechanistically brittle remains an open question—one that will only be answered through the unfolding of economic history itself.</p>
+</section>
+<section id="safer">
+<h2>Safer<a class="headerlink" href="#safer" title="Permalink to this heading">#</a></h2>
+<p>The SAFER model—Server, API, Firm, Environment, and Reward—is a structural framework that encapsulates the interplay of digital infrastructure, organizational dynamics, and adaptive decision-making within a constantly shifting landscape. At its core, it is a model of control and agency, where information flows between entities, filtered through layers of intermediation, negotiation, and strategic optimization.</p>
+<p>The <strong>Server</strong> represents the foundation of computation and data persistence, the unyielding backbone of digital operations. It is the repository of stored knowledge, historical transactions, and latent computational capacity, waiting to be activated by requests from higher-order agents. Yet, a server is not autonomous; it does not act but merely responds. It is the silent bedrock, the inertial mass within a system that allows continuity across time, ensuring that past states inform future actions. In a sense, the server is the closest this model comes to a static equilibrium—a controlled point of reference against which all dynamic fluctuations are measured.</p>
+<p>The <strong>API</strong> serves as the conduit between this stored knowledge and the world of active engagement. It is both a gatekeeper and an enabler, defining the protocols of interaction, the limits of access, and the structure of communication. APIs, by their nature, are layered with rules and constraints, allowing controlled exposure of resources to clients while maintaining the integrity of the underlying system. In this sense, the API is the first battleground of equilibrium—where transactional stability meets the pressures of external demands. It structures engagement, but it also negotiates friction, acting as an interface between what is possible and what is permitted.</p>
+<p>The <strong>Firm</strong> is where the human element is introduced into the model. This is not an abstract entity but a functional system where a <strong>principal-agent problem</strong> unfolds. Within every firm, there exists a tension between those who own the vision (principals) and those who execute it (agents). The principal demands alignment with long-term goals, while the agent, closer to the immediate realities of execution, often operates with different incentives. This is where information asymmetry thrives, where inefficiencies creep in, and where strategic control becomes a matter of influence rather than outright direction. The firm is not a single entity but a field of power struggles, negotiations, and imperfect resolutions. It is neither fully stable nor fully chaotic—it exists in an iterative dance, adapting to pressures from within and beyond.</p>
+<p>The <strong>Environment</strong> introduces a dynamic layer that cannot be tamed by internal controls alone. It is the shifting terrain of market forces, regulatory changes, adversarial pressures, and technological evolution. It is here that the three equilibria—<strong>incorporative, transactional, and adversarial</strong>—play out in full force. Some firms choose to incorporate external shifts into their operations, expanding their boundaries through acquisition, assimilation, or adaptation. Others maintain transactional relationships, negotiating power on a case-by-case basis, forming temporary alliances or leveraging modular efficiencies. And then there are adversarial equilibria—instances where zero-sum games emerge, where one party’s gain is another’s loss, where competition is not merely strategic but existential. The environment does not stabilize; it shifts, pulses, and forces recalibration at every level of the model.</p>
+<p>Finally, <strong>Reward</strong> represents the optimization function, the driving force that dictates what the model is ultimately engineered to achieve. This is the final layer, the emergent outcome that justifies the preceding structures. Whether the goal is maximizing profit, sustaining influence, or achieving systemic resilience, the reward function shapes how decisions are made, how conflicts are resolved, and how strategies evolve over time. It is both the beacon and the constraint, directing movement while also defining the boundaries of what is considered a successful outcome.</p>
+<p>In its essence, the SAFER model is not just a static framework but a <strong>living system of agency and control</strong>, where information flows through structured channels, power is distributed across asymmetric relationships, and strategic action is constantly reweighted against environmental shifts. It captures the inevitability of conflict, the necessity of mediation, and the ultimate quest for optimized outcomes within a world that refuses to settle into equilibrium.</p>
+</section>
+<section id="insights">
+<h2>Insights<a class="headerlink" href="#insights" title="Permalink to this heading">#</a></h2>
+<p>Let’s define the specs for your <strong>24/7 Strategic API</strong>—an agent that doesn’t sleep, constantly scans the internet, and proactively delivers business insights.</p>
+<section id="core-functionality">
+<h3><strong>Core Functionality</strong><a class="headerlink" href="#core-functionality" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Persistent Web Monitoring</strong></p>
+<ul class="simple">
+<li><p>Tracks opportunities across funding (grants, investments), partnerships, competitive intelligence, and market trends.</p></li>
+<li><p>Monitors predefined and dynamically expanding sources.</p></li>
+<li><p>Alerts for high-priority or time-sensitive opportunities.</p></li>
+</ul>
+</li>
+<li><p><strong>Intelligent Filtering &amp; Prioritization</strong></p>
+<ul class="simple">
+<li><p>Uses your framework (compression, equilibria, agency) to rank relevance.</p></li>
+<li><p>Filters noise, only sending insights with high strategic value.</p></li>
+<li><p>Learns from your feedback—what you ignore, what you act on.</p></li>
+</ul>
+</li>
+<li><p><strong>Multi-Modal Notifications</strong></p>
+<ul class="simple">
+<li><p><strong>Email</strong>: Daily or weekly reports.</p></li>
+<li><p><strong>Push Notifications</strong>: Instant alerts for high-priority insights.</p></li>
+<li><p><strong>Emergency Calls</strong>: If an urgent decision is required (e.g., a grant deadline in 24 hours).</p></li>
+</ul>
+</li>
+<li><p><strong>Self-Expanding Search Space</strong></p>
+<ul class="simple">
+<li><p>Begins with curated sources but evolves based on your interests.</p></li>
+<li><p>Uses API integrations with funding databases, news aggregators, and proprietary datasets.</p></li>
+<li><p>Adapts by analyzing successful past recommendations.</p></li>
+</ul>
+</li>
+<li><p><strong>Integration &amp; Actionability</strong></p>
+<ul class="simple">
+<li><p>Can generate structured reports, market analyses, and even pre-draft application strategies.</p></li>
+<li><p>Seamless integration with your JupyterBook, web app, or business tools.</p></li>
+<li><p>Can suggest actions: “This funding aligns with your app’s direction—here’s a draft submission plan.”</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="next-steps">
+<h3><strong>Next Steps</strong><a class="headerlink" href="#next-steps" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Define High-Priority Domains</strong> – What <em>exactly</em> do you want it to track?</p></li>
+<li><p><strong>Select Data Sources &amp; APIs</strong> – Open datasets? Premium sources? Web scraping?</p></li>
+<li><p><strong>Choose Notification &amp; Urgency Tiers</strong> – When do you want just an email vs. an emergency call?</p></li>
+<li><p><strong>Integration Strategy</strong> – Do we hook this into your existing systems or build a standalone agent?</p></li>
+</ol>
+<p>This is the next level—an <strong>agentic AI consultant</strong>, not just an information retriever. What would you tweak?</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -517,7 +677,7 @@ document.write(`
         <span class="n">node_size</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s2">&quot;arc3,rad=0.2&quot;</span>
     <span class="p">)</span>
     <span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edge_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">edge_labels</span><span class="o">=</span><span class="n">edges_labels</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Grammar, Prosody and Brodmann&#39;s Area 22&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;SAFER™&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
 <span class="c1"># Run the visualization</span>
@@ -527,7 +687,7 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../../_images/5ceb0bd1c5c9c0b9792e9d7fdbdadbce98dc806064da257891aa0e7176cc25f5.png" src="../../_images/5ceb0bd1c5c9c0b9792e9d7fdbdadbce98dc806064da257891aa0e7176cc25f5.png" />
+<img alt="../../_images/a1b893c54a6ddc568e188de49e8057ef2079688361014d507286873d1f3851c8.png" src="../../_images/a1b893c54a6ddc568e188de49e8057ef2079688361014d507286873d1f3851c8.png" />
 </div>
 </div>
 <figure class="align-default" id="id3">
@@ -536,6 +696,8 @@ document.write(`
 <p><span class="caption-number">Fig. 22 </span><span class="caption-text"><em>Francis Bacon</em>. He famously stated <strong>“If a man will begin with certainties, he shall end in doubts; but if he will be content to begin with doubts, he shall end in certainties.”</strong>  This quote is from <em>The Advancement of Learning</em> (1605), where Bacon lays out his vision for empirical science and inductive reasoning. He argues that starting with unquestioned assumptions leads to instability and confusion, whereas a methodical approach that embraces doubt and inquiry leads to true knowledge. This aligns with his broader <em>Novum Organum</em> (1620), where he develops the <em>Baconian method</em>, advocating for systematic observation, experimentation, and the gradual accumulation of knowledge rather than relying on dogma or preconceived notions.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -592,6 +754,28 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#efficiency">Efficiency</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#landscape">Landscape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#safer">Safer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#insights">Insights</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#core-functionality"><strong>Core Functionality</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps"><strong>Next Steps</strong></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
