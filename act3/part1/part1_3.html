@@ -419,15 +419,93 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="veiled-resentment">
 <span id="id1"></span><h1>Veiled Resentment<a class="headerlink" href="#veiled-resentment" title="Permalink to this heading">#</a></h1>
-<div style="display: flex; justify-content: center;">
-    <iframe width="80%" height="400px" src="https://www.youtube.com/embed/9BDmC5u_MLE?start=2595" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<figure class="align-default" id="blackrock-ceo-larry-fink">
-<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/7/72/Prometheus_and_Atlas%2C_Laconian_black-figure_kylix%2C_by_the_Arkesilas_Painter%2C_560-550_BC%2C_inv._16592_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01069.jpg"><img alt="https://upload.wikimedia.org/wikipedia/commons/7/72/Prometheus_and_Atlas%2C_Laconian_black-figure_kylix%2C_by_the_Arkesilas_Painter%2C_560-550_BC%2C_inv._16592_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01069.jpg" src="https://upload.wikimedia.org/wikipedia/commons/7/72/Prometheus_and_Atlas%2C_Laconian_black-figure_kylix%2C_by_the_Arkesilas_Painter%2C_560-550_BC%2C_inv._16592_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01069.jpg" style="width: 1%;" /></a>
+<style>
+  /* Apply styles only to elements with the custom class */
+  .custom-details summary {
+    list-style: none;  /* Remove default dropdown triangle */
+    cursor: pointer;
+    font-weight: normal; /* Normal text weight */
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px dotted black; /* Dotted circle */
+    border-radius: 20px; /* Make it rounded */
+    text-align: center;
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .custom-details summary:hover {
+    color: lightgray; /* Change text color on hover */
+  }
+
+  .custom-details summary::-webkit-details-marker {
+    display: none; /* Remove marker in WebKit (Chrome, Safari) */
+  }
+
+  /* Style for the ordered list inside the blockquote for visual appeal */
+  .custom-details blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 10px;
+    color: #555;
+  }
+
+  .custom-details blockquote h3,
+  .custom-details blockquote h4 {
+    margin: 0.5em 0;
+  }
+
+  .custom-details blockquote ol {
+    margin: 1em 0;
+    padding-left: 2em;
+    list-style-type: decimal;
+  }
+
+  .custom-details blockquote ol li {
+    margin-bottom: 0.75em;
+    font-style: italic;
+    line-height: 1.5;
+  }
+</style>
+<details class="custom-details">
+  <summary>+ Expand</summary>
+  <blockquote>
+    <h3>How Does Agentic AI Work?</h3>
+    <h4>Agentic AI uses a five-step process for problem-solving:</h4>
+    <ol>
+      <li><strong>World:</strong> The first principles of the cosmos, planet, life, ecosystem, and intelligence are experienced in real time. Humanity has encoded these in the laws of physics, biology, sociology, and other domains.</li>
+      <li><strong>Perceive:</strong> AI agents gather information from the world via sensors, databases, and digital interfaces, extracting meaningful features and recognizing key entities.</li>
+      <li><strong>Reason:</strong> A large language model acts as the orchestrator, understanding tasks, generating solutions, and coordinating specialized models for functions such as content creation, visual processing, or recommendation systems. Techniques like retrieval-augmented generation (RAG) access proprietary data for accurate outputs.</li>
+      <li><strong>Act:</strong> By integrating with external tools and APIs, agentic AI quickly executes tasks based on its formulated plans. Guardrails ensure proper task execution—for instance, a customer service agent might auto-process claims up to a limit, with higher amounts requiring human approval.</li>
+      <li><strong>Learn:</strong> Agentic AI continuously refines itself through a feedback loop (a “data flywheel”), where interaction data enhances the models, enabling it to adapt and drive better decision-making and efficiency over time.</li>
+    </ol>
+    <p>-- <a href="https://blogs.nvidia.com/blog/what-is-agentic-ai/">Nvidia</a></p>
+  </blockquote>
+</details>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const details = document.querySelector(".custom-details");
+    const summary = details.querySelector("summary");
+
+    details.addEventListener("toggle", function() {
+      summary.textContent = details.open ? "- Collapse" : "+ Expand";
+    });
+  });
+</script>
+<p></p>
+<p></p>
+<p>The landscape of intelligence—whether biological, artificial, or economic—rests on a fundamental architecture of layers, each building upon the last to generate complex behaviors. Traditional frameworks for understanding this hierarchy have included <strong>Ecosystem, Perceptual, Agentic, Generative, and Robotic</strong> components, each representing a distinct function in how an entity perceives, processes, and acts upon the world. However, a new variation on this theme presents itself: <strong>Server, API, Firm, Environment, Reward (SAFER™)</strong>. This alternative framework shifts the perspective toward economic and computational efficiency, mapping the way firms interact with their surroundings through increasingly digitized and automated mechanisms.</p>
+<p>At the core of SAFER™ is the <strong>Firm</strong>, which exists within a dynamic and often unpredictable <strong>Environment</strong>. Historically, firms have relied on a <strong>Principal-Agent</strong> model, where a Principal (e.g., a business owner, investor, or executive) employs human Agents (e.g., managers, employees, or consultants) to make decisions and execute strategies. The tension in this model arises from the well-documented <strong>Principal-Agent problem</strong>, where misaligned incentives, inefficiencies, and agency costs create friction within the system. The advent of <strong>Application Programming Interfaces (APIs)</strong> introduces a transformative alternative, offering a pathway toward disintermediation, where digital mechanisms replace human agents to execute tasks with precision, consistency, and scalability.</p>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="https://blogs.nvidia.com/wp-content/uploads/2024/10/agentic-ai-workflow-1.png"><img alt="https://blogs.nvidia.com/wp-content/uploads/2024/10/agentic-ai-workflow-1.png" src="https://blogs.nvidia.com/wp-content/uploads/2024/10/agentic-ai-workflow-1.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 23 </span><span class="caption-text"><em>Inheritence, Heir, Brand, Tribe, Religion</em>. We’ve described these stages of societal history. We’re discussing brand: an agent exerts an ecological loss function that some consider “creative destruction”.</span><a class="headerlink" href="#blackrock-ceo-larry-fink" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text"><em>Ecosystem, Perceptual, Agentic, Generative, Robotic</em>. Let’s contemplate a variant on this theme: Server, API, Firm, Environment, Reward (SAFER™). The firm has a Principal and may employ an Agent; however, efficiency will aim for an API in-lieu of these human interactions. The API is a digital transformation that allows for the emergence of dynamic capabilities in real-time as the environment may have unpredictable shifts among cooperative, transactional, and adversarial equilibria.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<p>The <strong>API</strong> represents the perceptual and operational layer within this new paradigm. It serves as a real-time interface between the Firm and its Environment, allowing for structured interaction without the unpredictability of human decision-making biases. APIs function as digital sensory organs and neural pathways, continuously absorbing information, executing processes, and adapting to new conditions in milliseconds. Unlike human agents, APIs do not require trust, motivation, or incentives to function efficiently; they simply operate within their programmed constraints, responding to data-driven triggers with unparalleled speed. In an economy where success hinges on rapid adaptation to <strong>cooperative, transactional, and adversarial equilibria</strong>, APIs provide firms with an intelligence layer that outpaces traditional decision-making structures.</p>
+<p>However, the presence of an API alone does not constitute full autonomy. The <strong>Server</strong> acts as the backbone, the stable computational infrastructure from which APIs draw their capabilities. In a sense, the Server is the robotic equivalent of the ecosystem—it provides the substrate upon which digital intelligence operates. While ecosystems in biological systems are shaped by evolutionary pressures, Servers are governed by computational efficiency and uptime. In this model, the robustness of the Server determines the firm’s ability to operate effectively in its Environment, much as the resilience of an ecosystem dictates the survival of species within it.</p>
+<p>The ultimate driver in this architecture is <strong>Reward</strong>, which acts as the incentive mechanism ensuring that the Firm continues to refine its use of APIs and Servers in pursuit of efficiency and profitability. Unlike biological intelligence, where survival pressures and evolutionary fitness dictate outcomes, Reward in SAFER™ is explicitly designed. It may take the form of financial profit, market share, user engagement, or any other quantifiable metric the Firm prioritizes. Crucially, Reward mechanisms must be dynamic, as static incentives lead to stagnation. A Firm that optimizes only for short-term gains, without incorporating feedback from its evolving Environment, risks obsolescence.</p>
+<p>The SAFER™ model encapsulates a new reality in which human agency, once central to economic coordination, is increasingly replaced by real-time digital transactions. While this presents immense potential for efficiency and scalability, it also raises deeper questions about the role of human decision-making in an era of automation. Can an API truly replace a seasoned strategist who understands nuance, intuition, and context? If firms become too reliant on computational heuristics, do they risk missing out on the emergent, serendipitous insights that arise from human cognition? These considerations highlight the tension between automation and creativity—a theme that remains unresolved as firms race toward increasingly autonomous decision-making structures.</p>
+<p>What SAFER™ proposes is not just an alternative to human agency, but a redefinition of how intelligence operates in a digital economy. Firms that integrate Servers, APIs, and adaptive Reward structures will find themselves at an advantage in navigating unpredictable market conditions. Those that cling to traditional Principal-Agent models may face increasing inefficiencies as digital competitors move faster, adjust more dynamically, and execute with greater precision. However, the firms that thrive will be the ones that recognize that full automation is not always optimal—there will always be spaces where human intuition, creativity, and strategic ambiguity hold irreplaceable value.</p>
+<p>Ultimately, SAFER™ is a blueprint for a future where digital intelligence, rather than human intermediaries, orchestrates the balance between adaptation and optimization. Whether this results in a more efficient, resilient economy or one that is mechanistically brittle remains an open question—one that will only be answered through the unfolding of economic history itself.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -542,10 +620,10 @@ document.write(`
 <img alt="../../_images/4d4ddd25e9dcedb8c02b43223428748ecfbb1a2ae7dc75c941df8ff2cb5e64b8.png" src="../../_images/4d4ddd25e9dcedb8c02b43223428748ecfbb1a2ae7dc75c941df8ff2cb5e64b8.png" />
 </div>
 </div>
-<figure class="align-default" id="id3">
+<figure class="align-default" id="id4">
 <a class="reference internal image-reference" href="../../_images/blanche.png"><img alt="../../_images/blanche.png" src="../../_images/blanche.png" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Aristotle’s method is top-down and deductive, beginning with axiomatic truths and using logical syllogisms to derive conclusions, prioritizing internal consistency over empirical verification. His framework assumes that if the premises are sound, the conclusion necessarily follows, reinforcing a stable, hierarchical knowledge system rooted in classification and definition. Bacon, in stark contrast, rejects this static certainty in favor of a bottom-up, inductive approach that builds knowledge through systematic observation, experimentation, and external testing. Rather than accepting inherited truths, Bacon’s method accumulates empirical data, refines hypotheses through iteration, and subjects knowledge to real-world scrutiny, making it adaptive, self-correcting, and ultimately more aligned with the unpredictability of nature.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Aristotle’s method is top-down and deductive, beginning with axiomatic truths and using logical syllogisms to derive conclusions, prioritizing internal consistency over empirical verification. His framework assumes that if the premises are sound, the conclusion necessarily follows, reinforcing a stable, hierarchical knowledge system rooted in classification and definition. Bacon, in stark contrast, rejects this static certainty in favor of a bottom-up, inductive approach that builds knowledge through systematic observation, experimentation, and external testing. Rather than accepting inherited truths, Bacon’s method accumulates empirical data, refines hypotheses through iteration, and subjects knowledge to real-world scrutiny, making it adaptive, self-correcting, and ultimately more aligned with the unpredictability of nature.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
